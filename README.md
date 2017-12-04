@@ -14,8 +14,10 @@ See also
   * [TextEncoderLite (based on text-encoding)](https://github.com/coolaj86/TextEncoderLite/tree/lite)
   * [Beatgammit's base64-js](https://github.com/beatgammit/base64-js)
 
-Quick Note to Node.js Users
+Are you in the right place?
 ------------------------
+
+Dear Node.js Users:
 
 You SHOULD NOT use this module. You already have [`Buffer`](https://nodejs.org/api/buffer.html) and [`thirty-two`](https://github.com/chrisumbel/thirty-two):
 
@@ -27,6 +29,25 @@ buf.toString('ascii');
 buf.toString('utf8');
 buf.toString('binary'); // deprecated, do not use
 ```
+
+Install
+-------
+
+You just include the `index.js` in a lovely script tag.
+
+```bash
+bower install --save unibabel
+```
+
+```html
+<script src="/bower_components/unibabel/index.js"></script>
+```
+
+Dear WebPack / Broccoli, Gulp / Grunt Users:
+
+I don't know how your build systems work these days,
+but Unibabel is exported as `Unibabel`
+and you can access it as `window.Unibabel`.
 
 API
 ===
